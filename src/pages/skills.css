@@ -1,0 +1,31 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-heading {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+}
+
+.skill-card {
+    position: relative;
+    padding: 4px;
+    width: 300px;
+    height: 250px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 1rem;
+    background-color: rgba(97, 26, 103, 0.687);
+}
+
+.skill-title {
+    text-align: center;
+}
+
+.skill-desc {
+    text-align: center;
+}
+
