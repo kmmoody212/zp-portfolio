@@ -1,12 +1,20 @@
+#portfolio {
+    margin: auto;
+    padding-top: 5%;
+    max-width: 80vw;
+}
+
 .portfolio-title {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-top: 5%;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .game-card {
     position: relative;
-    width: 400px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
     overflow: hidden;
     cursor: pointer;
     
@@ -45,5 +53,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 40px;
 }

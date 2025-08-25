@@ -23,10 +23,10 @@ export function loadPortfolio(){
     const games = [
     { img: xdefiant, desc: "was once a great game" },
     { img: rainbowsix, desc: "also a cool game" },
-    { img: thinsilence, desc: "an old indie game" },
     { img: farcry, desc: "everyone knows farcry" },
-    { img: steep, desc: "snowboarding is fun" },
-    { img: hyperscape, desc: "looks really cool" }
+    { img: hyperscape, desc: "looks really cool" },
+    { img: thinsilence, desc: "an old indie game" },
+    { img: steep, desc: "snowboarding is fun" }
     ];
 
     const cards = games.map(game => createGameCard(game.img, game.desc));
