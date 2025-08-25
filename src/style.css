@@ -4,6 +4,7 @@
 * {
     color: white;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -56,8 +57,9 @@ a {
 }
 
 main {
-    margin: 12% auto;
+    margin: auto;
     max-width: 70vw;
+    padding-top: 12%;
 }
 
 .hero {
