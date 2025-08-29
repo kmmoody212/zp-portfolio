@@ -1,7 +1,8 @@
 #portfolio {
-    margin: auto;
-    padding-top: 5%;
     max-width: 80vw;
+    margin: auto;
+    padding-top: 4%;
+    text-align: center;
 }
 
 .portfolio-title {
@@ -54,4 +55,5 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    margin-bottom: 48px;
 }
