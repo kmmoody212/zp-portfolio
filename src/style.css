@@ -109,13 +109,13 @@ button.hero-btn {
     color: #DEDCFF;
 }
 /* (to right, #022cb0, #440C75) */
-#portfolio {
+/* #portfolio {
     margin: auto;
     margin-top: 1rem;
     padding: 2rem;
     max-width: 75vw;
     text-align: center;
-}
+} */
 
 /* /////////// CONTACT FORM /////////////// */
 #contact {
