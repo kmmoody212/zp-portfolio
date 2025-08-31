@@ -6,12 +6,16 @@ import TagCloud from "TagCloud";
 const container = '.tagcloud';
 
 const texts = [
-    'PR', 'example1', 'example2', 'example3',
+    'PR', 'Asset Creation', 'Crisis Comm',
+    'Campaign Strategy', 'Go To Market', 'Reporting',
+    'Analytics', 'Community Management',
+    'Social Media', 'Adobe Premiere', 'Blender',
+    'Unreal Engine', 'Feedback Process', 'Channel Strategy',
 ]
 
 const options = {
-    radius: 140,
-    maxSpeed: 'fast',
+    radius: 350,
+    maxSpeed: 'normal',
     initSpeed: 'normal',
     direction: 135,
     keep: true,
