@@ -1,46 +1,66 @@
 #skills {
-    /* padding-top: 200px; */
+    display: flex;
     max-width: 80vw;
     margin: auto;
-    padding-top: 4%;
-    text-align: center;
+    padding: 10% 0 8% 0;
+    gap: 8px;
+
 }
 
-.skills-container {
+#skills-blurb {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 45%;
     justify-content: center;
+   
 }
 
 .skills-heading {
-    text-align: center;
-    margin-bottom: 4rem;
-    margin-top: 5%;
+    font-size: 3rem;
     text-decoration: underline;
     text-underline-offset: 5px;
+    margin: 0;
 }
 
-.skill-card {
-    position: relative;
-    padding: 4px;
-    width: 80vw;
-    border-radius: 12px;
-    cursor: pointer;
-    margin: 0px auto 2rem auto;
-    background-color: #611a67af;
+.skills-ul {
+    padding: 0;
+}
+
+.list-heading {
+    font-size: 1.3rem;
+}
+
+.skill {
+    list-style-type: none;
+    padding: 2% 1% 2% 3%;
+    margin: 18px 0;
+    border-bottom: 2px solid rgba(0, 234, 255, 0.416);
+    padding: 10px;
+ 
     
 }
 
-.skill-title {
-    text-align: center;
+
+#sphere {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 80vw;
     margin: auto;
 }
 
-.skill-desc {
-    
-    text-align: center;
-    font-weight: 300;
-    margin: 4px auto;
-    
+
+.tagcloud--item {
+    color: #DEDCFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
 }
 
+.tagcloud--item:hover {
+    text-shadow:
+    0 0 5px #8000ff,   /* Inner glow */
+    0 0 10px #8000ff,  /* Mid glow */
+    0 0 20px #8000ff,  /* Outer glow */
+    0 0 40px #8000ff,  /* Wider glow */
+    0 0 80px #8000ff;  /* Farthest glow*/
+}
