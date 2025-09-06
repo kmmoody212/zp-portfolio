@@ -82,11 +82,22 @@ main {
 }
 
 button.hero-btn {
-    background-color: rgb(67, 191, 191);
+    background-color: rgb(18, 140, 151);
     border-radius: 100px;
     border: none;
     padding: 1.25rem 2.5rem;
     margin-top: 3%;
+}
+
+button.hero-btn:hover {
+    background-color: rgba(0, 234, 255, 0.416);
+    box-shadow:
+    0 0 5px rgba(23, 236, 255, 0.534), /* Inner glow */
+    0 0 10px rgba(23, 236, 255, 0.534),
+    0 0 20px rgba(23, 236, 255, 0.534),
+    0 0 40px rgba(23, 236, 255, 0.534), /* Outer glow */
+    0 0 80px rgba(23, 236, 255, 0.534);
+    cursor: pointer;
 }
 
 .blurbs {
@@ -120,12 +131,14 @@ button.hero-btn {
 /* /////////// CONTACT FORM /////////////// */
 #contact {
     padding-top: 4%;
-    padding-bottom: 5%;
+    padding-bottom: 25vh;
 }
 
 .contact-heading {
     text-align: center;
     margin-bottom: 3%;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 
 }
 
@@ -137,25 +150,35 @@ button.hero-btn {
     max-width: 55vw;
     margin: auto;
     border-radius: 8px;
+    line-height: 2rem;
     
 }
 
 textarea::placeholder {
-    color: rgba(0, 0, 0, 0.658);
+    color: rgba(255, 255, 255, 0.758);
 }
 
+input::placeholder {
+    color: rgba(255, 255, 255, 0.758);
+    
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+    box-shadow: 2px 2px 10px 5px rgb(18, 140, 151);
+    border: none;
+    border-radius: 18px;
+}
 
 #name,
 #email,
 #message {
     width: 45vw;
-    padding: 8px;
-    background-color:rgba(245, 245, 245, 0.792);
-    border: none;
-    border-radius: 4px;
-    color: black;
-
-    
+    padding: 1.5rem;
+    background: none;
+    color: white;
+    outline: none;
 }
 
 #name,
@@ -163,20 +186,36 @@ textarea::placeholder {
     margin: 4px auto 24px auto;
     height: 2rem;
     font-size: 1.1rem;
-    text-align: center;
+    border: none;
+    border-bottom: 2px solid #DEDCFF;
 }
 
 #message {
-    margin: 4px auto 3rem auto;
+    margin: 1rem auto 3rem auto;
+    font-family: "Sora", sans-serif; 
+    font-size: 1rem;
+    border: 2px solid #DEDCFF;
 }
 
 #submit-btn {
-    width: 200px;
-    height: 34px;
+    /* width: 200px;
+    height: 34px; */
     margin: auto;
     background-color: rgb(50, 10, 54);
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    padding: .75rem 4rem;
+    font-weight: 600;
     
+}
+
+#submit-btn:hover {
+    background-color: rgba(0, 234, 255, 0.416);
+    box-shadow:
+    0 0 5px rgba(23, 236, 255, 0.534), /* Inner glow */
+    0 0 10px rgba(23, 236, 255, 0.534),
+    0 0 20px rgba(23, 236, 255, 0.534),
+    0 0 40px rgba(23, 236, 255, 0.534), /* Outer glow */
+    0 0 80px rgba(23, 236, 255, 0.534);
 }
