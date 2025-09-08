@@ -35,7 +35,7 @@ nav {
 }
 
 .logo {
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 .nav-links {
@@ -45,6 +45,7 @@ nav {
     width: 30vw;
     justify-content: space-between;
     font-weight: 500;
+    font-size: 1.25rem;
     
 }
 
@@ -118,6 +119,11 @@ button.hero-btn:hover {
     max-height: 125px;
     border: 2px solid #59018b;
     color: #DEDCFF;
+}
+
+.blurbs *:hover {
+    background-color:#59018b;
+    transition: all 0.3 ease;
 }
 /* (to right, #022cb0, #440C75) */
 /* #portfolio {

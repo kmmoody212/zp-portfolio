@@ -1,5 +1,5 @@
 
-export function createGameCard(imgPath, text) {
+export function createGameCard(imgPath, title, text) {
     // each card is a div containing an image and text
     const card = document.createElement("div");
     card.classList.add("game-card");
@@ -14,11 +14,17 @@ export function createGameCard(imgPath, text) {
     const overlay = document.createElement("div");
     overlay.classList.add("overlay");
 
+    // heading for job title
+    const jobTitle = document.createElement("h2");
+    jobTitle.classList.add("job-title");
+    jobTitle.textContent = title;
+
     // description text
     const para = document.createElement("p");
     para.classList.add("game-desc");
     para.textContent = text;
     
+    overlay.appendChild(jobTitle);
     overlay.appendChild(para);
     card.appendChild(overlay);
 
