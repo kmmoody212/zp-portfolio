@@ -2,7 +2,7 @@
     display: flex;
     max-width: 80vw;
     margin: auto;
-    padding: 10% 0 8% 0;
+    padding-top: 4%;
     gap: 8px;
 
 }
@@ -16,7 +16,7 @@
 }
 
 .skills-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: underline;
     text-underline-offset: 8px;
     margin: 0;

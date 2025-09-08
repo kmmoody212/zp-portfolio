@@ -84,7 +84,7 @@ main {
 
 button.hero-btn {
     background-color: rgb(18, 140, 151);
-    border-radius: 100px;
+    border-radius: 18px;
     border: none;
     padding: 1.25rem 2.5rem;
     margin-top: 3%;
@@ -136,7 +136,7 @@ button.hero-btn:hover {
 
 /* /////////// CONTACT FORM /////////////// */
 #contact {
-    padding-top: 4%;
+    padding-top: 48px;
     padding-bottom: 25vh;
 }
 
@@ -145,6 +145,7 @@ button.hero-btn:hover {
     margin-bottom: 3%;
     text-decoration: underline;
     text-underline-offset: 5px;
+    font-size: 2rem;
 
 }
 
