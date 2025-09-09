@@ -47,6 +47,7 @@ nav {
     font-weight: 500;
     font-size: 1.25rem;
     
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+    
 }
 
 main {
@@ -67,6 +69,7 @@ main {
     display: flex;
     border-radius: 18px;
     justify-content: space-between;
+    scroll-behavior: smooth;
 }
 
 .left-side {
@@ -123,7 +126,7 @@ button.hero-btn:hover {
 
 .blurbs *:hover {
     background-color:#59018b;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 /* (to right, #022cb0, #440C75) */
 /* #portfolio {
@@ -142,7 +145,7 @@ button.hero-btn:hover {
 
 .contact-heading {
     text-align: center;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     text-decoration: underline;
     text-underline-offset: 5px;
     font-size: 2rem;
@@ -208,7 +211,7 @@ input::placeholder {
     /* width: 200px;
     height: 34px; */
     margin: auto;
-    background-color: rgb(50, 10, 54);
+    background-color: rgb(18, 140, 151);
     border-radius: 8px;
     border: none;
     cursor: pointer;
