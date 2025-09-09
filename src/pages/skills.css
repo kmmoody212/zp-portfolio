@@ -28,18 +28,29 @@
 
 .list-heading {
     font-size: 1.3rem;
+    color: #DEDCFF;
 }
 
 .skill {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
-    padding: 2% 1% 2% 3%;
-    margin: 18px 0;
-    border-bottom: 2px solid rgba(0, 234, 255, 0.416);
-    padding: 10px;
- 
+    margin: 2rem 0;
+    padding: 0px;
+    border-radius: 100px;
+    cursor: pointer;
     
 }
 
+.skill * {
+    margin: 0 6px 0 0;
+    padding: 8px 6px 8px 24px;
+    border: 2px solid #59018b;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
 
 #sphere {
     display: flex;
