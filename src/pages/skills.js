@@ -9,8 +9,11 @@ export function loadSkills() {
     const skillList = document.createElement("ul"); // list for blurb
     const listHeader = document.createElement("h3"); // header for list
     const item1 = document.createElement("li");
+    const title1 = document.createElement("h3");
     const item2 = document.createElement("li");
+    const title2 = document.createElement("h3");
     const item3 = document.createElement("li");
+    const title3 = document.createElement("h3");
 
 
     heading.classList.add("skills-heading"); // class for h2
@@ -27,13 +30,21 @@ export function loadSkills() {
     item2.classList.add("skill");
     item3.classList.add("skill");
     // text content for each line item
-    item1.textContent = "Campaign Strategy: Overall strategy for social media campaigns and Go To Markets, analytics, and long term planning";
-    item2.textContent = "Community Management & Feedback: Developing useful feedback cycles, reporting and analysis, social community building such as on Discord";
-    item3.textContent = "Tactic Execution: Expert in capturing, editing, asset creation, video, livestreaming and more";
+    item1.textContent = "Overall strategy for social media campaigns and Go To Markets, analytics, and long term planning";
+    item2.textContent = "Developing useful feedback cycles, reporting and analysis, social community building such as on Discord";
+    item3.textContent = "Expert in capturing, editing, asset creation, video, livestreaming and more";
     // append list items to ul
     skillList.appendChild(item1);
     skillList.appendChild(item2);
     skillList.appendChild(item3);
+    // text content for headers in each list item
+    title1.textContent = "Campaign Strategy";
+    title2.textContent = "Community Management & Feedback";
+    title3.textContent = "Tactic Execution";
+    // append headers to each item
+    item1.appendChild(title1);
+    item2.appendChild(title2);
+    item3.appendChild(title3);
     // append skill list to skills-blurb container
     section.appendChild(skillList);
     
@@ -84,36 +95,6 @@ const options = {
       console.log('clicked:', e.target.textContent);
     }
   });
-
-//   const leftContainer = document.createElement("div");
-//   leftContainer.classList.add("left-side-skills");
-//   skillSection.append(leftContainer);
-
-//   const title = document.createElement("h2");
-//   title.textContent = "SKILLS";
-//   title.id = "skill-title";
-//   leftContainer.append(title);
-
-//   const descList = document.createElement("div");
-//   descList.textContent = "My main focus of skills is grouped into three categories:";
-//   descList.classList.add("skills-desc");
-
-//   const desc = document.createElement("ul");
-//   desc.classList.add("desc-ul");
-
-//   const descPoint1 = document.createElement("li");
-//   descPoint1.textContent = "Campaign Strategy: Overall strategy for social media campaigns and Go To Markets, analytics, and long term planning";
-//   const descPoint2 = document.createElement("li");
-//   descPoint2.textContent = "Community Management & Feedback: Developing useful feedback cycles, reporting and analysis, social community building such as on Discord";
-//   const descPoint3 = document.createElement("li");
-//   descPoint3.textContent = "Tactic Execution: Expert in capturing, editing, asset creation, video, livestreaming and more";
-
-    
-//   desc.append(descPoint1);
-//   desc.append(descPoint2);
-//   desc.append(descPoint3);
-//   descList.append(desc);
-//   leftContainer.append(descList);
 
 
 return TagCloud(container, texts, options);
