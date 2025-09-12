@@ -9,68 +9,57 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <title>Zack Padgett</title>
+<script src="https://kit.fontawesome.com/93bf94a79e.js" crossorigin="anonymous"></script>
+<title>Zack Padgett</title>
 <script defer src="main.js"></script></head>
 <body>
     <header>
       <nav>
         <h1 class="logo">Zack Padgett</h1>
         <ul class="nav-links">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/work">WORK</a></li>
-          <li><a href="/contact">CONTACT</a></li>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#portfolio">WORK</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="top">
       <div class="hero">
         <div class="left-side">
-          <h1 style="margin: 0;">Hi, I'm a Community Developer with 8 years of AAA experience</h1>
-          <p>Focused on building large communities, developing feedback pipelines, & delivering high engagement content campaigns.</p>
-          <button class="hero-btn">View Work Experience</button>
+          <h1 style="margin: 0; font-size: 2.5rem;">Hi, I'm a Community Developer with 8 years of AAA experience</h1>
+          <p style="color: #DEDCFF">I am focused on building large communities, developing feedback pipelines, & delivering high engagement content campaigns.</p>
+          <button class="hero-btn" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">View Work Experience</button>
         </div>
-        <img class="right-side" src="adbfb5459b0b3e4c8731.png" alt="Zack Padgett Front Profile">
+        <img class="right-side" src="2353a5c803a612e5b11f.png" alt="Photo of Zack Padgett">
       </div>
-
-      <p class="home-desc">Bachelor’s and Master’s degree in communication studies with a focus on online communities. Eight years of triple AAA experience, with work in Indie and Esports. Virtual artist & editing part of my passions in addition to Dungeons & Dragons, Photography, and chocolate chip cookies</p>
+      <div class="blurbs">
+        <p>Bachelor’s and Master’s degree in communication studies with a focus on online communities.</p>
+        <p>Eight years of triple AAA experience, with work in Indie and Esports.</p>
+        <p style="font-size: 0.9rem;">Virtual artist & editing part of my passions in addition to Dungeons & Dragons, Photography, and chocolate chip cookies!</p>
+      </div>
     </main>
 
-    <section class="portfolio">
-      <h1>GAMES I'VE WORKED ON</h1>
-      <div class="card-section">
-        <div class="card">
-          <!-- background of game -->
-          <!-- Title of game (hidden) -->
-          <!-- Brief summary of game ie. role, years worked on, etc. (hidden) -->
-        </div>
-        <div class="card">
-          <!-- background of game -->
-          <!-- Title of game (hidden) -->
-          <!-- Brief summary of game ie. role, years worked on, etc. (hidden) -->
-        </div>
-        <div class="card">
-          <!-- background of game -->
-          <!-- Title of game (hidden) -->
-          <!-- Brief summary of game ie. role, years worked on, etc. (hidden) -->
-        </div>
-        <div class="card">
-          <!-- background of game -->
-          <!-- Title of game (hidden) -->
-          <!-- Brief summary of game ie. role, years worked on, etc. (hidden) -->
-        </div>
-        <div class="card">
-          <!-- background of game -->
-          <!-- Title of game (hidden) -->
-          <!-- Brief summary of game ie. role, years worked on, etc. (hidden) -->
-        </div>
-        <div class="card">
-          <!-- background of game -->
-          <!-- Title of game (hidden) -->
-          <!-- Brief summary of game ie. role, years worked on, etc. (hidden) -->
-        </div>
-      </div>
-    </section>
+    <div id="portfolio"></div>
+
+    <div id="skills">
+      <div id="skills-blurb"></div>
+      <div id="sphere" class="tagcloud"></div>
+    </div>
+    
+
+    <div id="contact">
+      <h2 class="contact-heading">GET IN TOUCH</h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="3a618d26-e82e-4143-a442-1e019acfecd9">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit" id="submit-btn">SEND</button>
+
+      </form>
+    </div>
     
 </body>
 </html>
