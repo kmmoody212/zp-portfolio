@@ -53,6 +53,10 @@ nav {
     text-underline-offset: 5px;
 }
 
+.fa-solid.fa-bars {
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Space Grotesk", sans-serif;
 }
@@ -78,6 +82,12 @@ main {
 .left-side {
     padding: 4% 4% 4% 0;
     text-align: center;
+    order: 1;
+}
+
+.left-side > .intro {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 .right-side {
@@ -86,6 +96,7 @@ main {
   object-fit: cover; /* fills the box, crops overflow */
   object-position: center; /* optional: controls which part shows */
   border-radius: 18px;
+  order: 2;
 }
 
 button.hero-btn {
@@ -119,8 +130,9 @@ button.hero-btn:hover {
 
 .blurbs * {
     text-align: center;
+    font-size: 0.9rem;
     border-radius: 100px;
-    padding: 18px;
+    padding: 12px 18px;
     max-width: 300px;
     max-height: 125px;
     border: 2px solid #59018b;
@@ -131,14 +143,168 @@ button.hero-btn:hover {
     background-color:#59018b;
     transition: all 0.3s ease;
 }
-/* (to right, #022cb0, #440C75) */
-/* #portfolio {
-    margin: auto;
-    margin-top: 1rem;
-    padding: 2rem;
-    max-width: 75vw;
-    text-align: center;
-} */
+
+/* //////// SCREEN SIZE ADJUSTMENTS ///////// */
+
+@media screen and (max-width: 975px) {
+    .blurbs * {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .nav-links {
+        font-size: 1.1rem;
+    }
+    .left-side {
+        padding: 2% 2% 2% 0;
+    }
+
+    .left-side > .intro {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .nav-links {
+        font-size: 1rem;
+
+    }
+    .hero {
+        padding-top: 10%;
+    }
+    .left-side {
+        padding: 0px 1% 0px 0px;
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+    .left-side > .intro {
+        font-size: 1.75rem;
+
+    }
+
+    .left-side p {
+        font-size: 0.85rem;
+    }
+
+    button.hero-btn {
+        padding: 0.9rem 1.9rem;
+    }
+
+    button.hero-btn:hover {
+    background-color: rgba(0, 234, 255, 0.416);
+    box-shadow:
+    0 0 3px rgba(23, 236, 255, 0.534), /* Inner glow */
+    0 0 6px rgba(23, 236, 255, 0.534),
+    0 0 12px rgba(23, 236, 255, 0.534),
+    0 0 20px rgba(23, 236, 255, 0.534), /* Outer glow */
+    0 0 40px rgba(23, 236, 255, 0.534);
+    cursor: pointer;
+    }
+
+    .blurbs {
+        margin: 2rem auto;
+    }
+
+    .blurbs * {
+        font-size: 0.65rem;
+        padding: 12px;
+    }
+
+    nav {
+        padding-bottom: 3%;
+        background: #000000;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%)
+    }
+
+    .logo {
+        font-size: 1.75rem;
+
+    }
+
+    .nav-links {
+        width: 35vw;
+    }
+}
+
+
+@media screen and (width < 672px) {
+    .nav-links {
+        max-height: 0;              /* start closed */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        background: rgba(0,0,0,0.9); 
+        position: absolute;
+        top: 60px; /* below nav bar */
+        left: 0;
+        padding: 0;
+        text-align: center;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+    padding: 1rem 0;
+  }
+
+    .nav-links.active {
+    display: flex; 
+    max-height: 300px;
+    padding: 1rem 0;
+  }
+
+    .fa-solid.fa-bars {
+        display: block;
+        font-size: 1.75rem;
+        cursor: pointer;
+    }
+
+    .fa-solid.fa-xmark {
+    display: none; /* hidden until menu is open */
+    font-size: 1.75rem;
+    cursor: pointer;
+  }
+
+  nav.open .fa-bars {
+    display: none; /* hide bars when menu open */
+  }
+
+  nav.open .fa-xmark {
+    display: block; /* show X when menu open */
+  }
+
+  nav.open {
+    background-color: rgba(0,0,0,0.9);
+  }
+
+.hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+.left-side {
+        order: 2;
+
+    }
+
+.right-side {
+        order: 1;
+        width: 200px;
+        height: 275px;
+        object-fit: cover;
+        border-radius: 18px;
+
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+}
+
+
 
 /* /////////// CONTACT FORM /////////////// */
 #contact {

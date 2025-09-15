@@ -9,13 +9,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/93bf94a79e.js" crossorigin="anonymous"></script>
+
 <title>Zack Padgett</title>
 </head>
 <body>
     <header>
       <nav>
         <h1 class="logo">Zack Padgett</h1>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
         <ul class="nav-links">
           <li><a href="#top">HOME</a></li>
           <li><a href="#portfolio">WORK</a></li>
@@ -28,7 +30,7 @@
     <main id="top">
       <div class="hero">
         <div class="left-side">
-          <h1 style="margin: 0; font-size: 2.5rem;">Hi, I'm a Community Developer with 8 years of AAA experience</h1>
+          <h1 class="intro">Hi, I'm a Community Developer with 8 years of AAA experience</h1>
           <p style="color: #DEDCFF">I am focused on building large communities, developing feedback pipelines, & delivering high engagement content campaigns.</p>
           <button class="hero-btn" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">View Work Experience</button>
         </div>
@@ -37,7 +39,7 @@
       <div class="blurbs">
         <p>Bachelor’s and Master’s degree in communication studies with a focus on online communities.</p>
         <p>Eight years of triple AAA experience, with work in Indie and Esports.</p>
-        <p style="font-size: 0.9rem;">Virtual artist & editing part of my passions in addition to Dungeons & Dragons, Photography, and chocolate chip cookies!</p>
+        <p>Virtual artist & editing part of my passions in addition to Dungeons & Dragons, Photography, and chocolate chip cookies!</p>
       </div>
     </main>
 
@@ -61,5 +63,20 @@
       </form>
     </div>
     
+    <script>
+  const nav = document.querySelector("nav");
+  const menuIcon = document.querySelector(".fa-bars");
+  const closeIcon = document.querySelector(".fa-xmark");
+  const navLinks = document.querySelector(".nav-links");
+
+  function toggleMenu() {
+    nav.classList.toggle("open");
+    navLinks.classList.toggle("active");
+  }
+
+  menuIcon.addEventListener("click", toggleMenu);
+  closeIcon.addEventListener("click", toggleMenu);
+</script>
+   
 </body>
 </html>

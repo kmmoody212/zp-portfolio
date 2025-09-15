@@ -52,6 +52,8 @@
     border-bottom-left-radius: 100px;
 }
 
+
+
 #sphere {
     display: flex;
     justify-content: space-evenly;
@@ -75,3 +77,23 @@
     0 0 40px #8000ff,  /* Wider glow */
     0 0 80px #8000ff;  /* Farthest glow*/
 }
+
+@media screen and (width < 1040px) {
+    .skill {
+        font-size: 0.75rem;
+    }
+
+    .skill * {
+        font-size: 0.90rem;
+    }
+
+    .tagcloud--item {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+}
+
+/* @media screen and (width < 867px) {
+
+} */
