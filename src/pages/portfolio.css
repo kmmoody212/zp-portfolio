@@ -68,3 +68,43 @@
     font-size: 1.75rem;
 }
 
+@media screen and (width < 775px) {
+    .portfolio-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (width < 540px) {
+    .portfolio-title {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    #portfolio {
+        max-width: 90vw;
+    }
+
+    .game-card {
+    display: inline-block;
+    position: relative;
+    width: 340px;
+    height: 175px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .game-desc {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 12px;
+}
+
+.job-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #DEDCFF;
+    font-size: 1.25rem;
+}
+
+
+}
